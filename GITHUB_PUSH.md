@@ -29,21 +29,12 @@ git commit --no-verify -m "Initial commit"
 
 ---
 
-## 第三步：添加远程并推送
+## 第三步：推送（远程已配置）
 
-把下面命令里的 `你的用户名` 和 `仓库名` 换成你的实际信息：
+远程已设为 **https://github.com/Mikey0921-cm/alpay-huose.git**，只需执行：
 
 ```bash
 cd /Users/roy/Downloads/airbnb-page-clone
-git remote add origin https://github.com/你的用户名/仓库名.git
-git branch -M main
-git push -u origin main
-```
-
-例如仓库是 `https://github.com/roy/airbnb-page-clone`，则：
-
-```bash
-git remote add origin https://github.com/roy/airbnb-page-clone.git
 git branch -M main
 git push -u origin main
 ```
