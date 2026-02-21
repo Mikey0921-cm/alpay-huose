@@ -2,8 +2,8 @@
 
 import { Search, Globe, X } from "lucide-react"
 import { useState, useRef, useEffect } from "react"
-import Link from "next/link"
 import { useLanguage } from "@/components/i18n/language-context"
+import { Logo } from "@/components/airbnb/logo"
 
 export function Header() {
   const { language, setLanguage, t, availableLanguages } = useLanguage()
@@ -27,14 +27,7 @@ export function Header() {
     <header className="sticky top-0 z-50 border-b border-border bg-background">
       <div className="mx-auto flex max-w-[1760px] items-center justify-between px-6 py-4 md:px-10 lg:px-20">
         {/* Logo */}
-        <a href="/" className="flex items-center gap-2">
-          <svg viewBox="0 0 32 32" className="h-8 w-8 text-primary" fill="currentColor" aria-label="Alpay House homepage" role="img">
-            <path d="M16 2C10 2 5 7 5 13c0 4 2.5 7.5 6 9.5V28a1 1 0 001 1h8a1 1 0 001-1v-5.5c3.5-2 6-5.5 6-9.5 0-6-5-11-11-11zm-2 25v-4h4v4h-4zm6.5-7.2l-.5.3V24h-8v-3.9l-.5-.3C8.5 18 7 15.6 7 13c0-5 4-9 9-9s9 4 9 9c0 2.6-1.5 5-4.5 6.8z" />
-          </svg>
-          <span className="hidden text-xl font-bold text-primary md:block">
-            Alpay House
-          </span>
-        </a>
+        <Logo showText size="md" />
 
         {/* Search Bar */}
         <div className="relative" ref={searchRef}>
